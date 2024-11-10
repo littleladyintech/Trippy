@@ -1,0 +1,143 @@
+/* Base Styles */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #01959a;
+    padding: 20px; /* Ensure proper padding for smaller screens */
+}
+
+.signup-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.signup-form h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    text-align: left;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.signup-form input:focus {
+    border: 1px solid #01959a;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: calc(100%);
+    padding-right: 40px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Sign Up Button */
+.reg {
+    background-color: #01959a;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.reg:hover {
+    background-color: #017f83;
+}
+
+.signup-form p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+.signup-form a {
+    color: #01959a;
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 850px) {
+    .signup-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+  
+    .signup-form {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .signup-form h2 {
+        font-size: 20px;
+    }
+
+    .signup-form label {
+        font-size: 13px;
+    }
+
+    .signup-form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .password-toggle {
+        font-size: 16px;
+    }
+
+    .reg {
+        font-size: 16px;
+        padding: 10px 25px;
+       
+        display: flex;
+        margin: auto;
+    }
+
+    .signup-form p {
+        font-size: 13px;
+    }
+}
